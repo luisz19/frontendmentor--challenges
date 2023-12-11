@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mobile.css">
+  
   <title>Frontend Mentor | E-commerce product page</title>
 
 </head>
@@ -16,25 +17,41 @@
     <nav>
       <ul>
         <li>
-          <figure>
+          <figure class="mobile-menu">
+            <img class="menu-hamburger" src="images/icon-menu.svg" alt="">
             <img class="logo" src="images/logo.svg" alt="logo">
           </figure>
         </li>
-        <li  class="list-men">Collections</li>
-        <li class="list-men">Men</li>
-        <li class="list-men">Women</li>
-        <li class="list-men">About</li>
-        <li class="list-men">Contact</li>
+    
+          <li  class="list-men">Collections</li>
+          <li class="list-men">Men</li>
+          <li class="list-men">Women</li>
+          <li class="list-men">About</li>
+          <li class="list-men">Contact</li>
+        
         
           <figure class="profile">
             <img class="cart" src="images/icon-cart.svg" alt="">
             <img class="avatar" src="images/image-avatar.png" alt="">
+            
           </figure>
        
         
       </ul>
     </nav>
+    <nav class="navbar">
+      <ul>
+        <li >Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+   
   </header>
+
+  
 
   <main>
     <section class="product">
@@ -50,6 +67,7 @@
         </ul>
       </figure>
     </section>
+    
     <section class="description">
       <h4>Sneaker Company</h4>
       <h1>Fall Limited Edition Sneakers</h1>
@@ -66,13 +84,17 @@
       </div>
       <div class="line-cart">
         <div class="quant"> <!--JS-->
-          <figure>
-            <img src="images/icon-minus.svg" alt="minus">
-          </figure>
-          0
-          <figure>
-            <img src="images/icon-plus.svg" alt="plus">
-          </figure>
+          <button id="minus">
+            <figure>
+              <img src="images/icon-minus.svg" alt="minus">
+            </figure>
+          </button>
+          <div id="value">0</div>
+          <button id="plus">
+            <figure>
+              <img src="images/icon-plus.svg" alt="plus">
+            </figure>
+          </button>
         </div>
         <button class="btn"><img class="cart-btn" src="images/icon-cart.svg" alt="">Add to cart</button>
       </div>
@@ -83,5 +105,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
