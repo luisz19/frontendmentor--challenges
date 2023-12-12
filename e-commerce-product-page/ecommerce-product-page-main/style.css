@@ -43,6 +43,11 @@ header nav ul{
  
 }
 
+.menu-hamburger{
+    display: none;
+}
+
+
 nav.navbar{
     display: none;
    
@@ -51,10 +56,15 @@ nav.navbar{
 
 header nav ul li{
     transition: all 0.5s;
+    cursor: pointer;
+    
+
 }
 
 header nav ul li:hover{
     color: var(--Darkgrayishblue);
+    text-decoration: 2px underline var(--Orange);
+
 }
 
 nav figure.profile{
@@ -72,7 +82,7 @@ nav figure.profile{
 /* main */
 
 main{
-    margin: 90px 40px;
+    margin: 70px 40px;
     padding-bottom: 80px;
     display: flex;
     gap: 90px;
@@ -197,4 +207,14 @@ p.percent{
 button#plus, button#minus{
     background: none;
     border: none;
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+}
+
+.attribution a{
+   color: var(--Orange);
+   text-decoration: none;
 }
