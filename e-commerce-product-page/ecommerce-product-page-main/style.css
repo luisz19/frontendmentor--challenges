@@ -96,6 +96,16 @@ section .selected{
     border-radius: 12px; 
 }
 
+section form{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+    
+}
+
+
+
 ul.thumbnail{
     display: flex;
     justify-content: space-between;
