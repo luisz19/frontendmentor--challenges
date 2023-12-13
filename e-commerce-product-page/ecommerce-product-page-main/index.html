@@ -13,12 +13,12 @@
 </head>
 <body>
 
-  <header>
+  <header id="header">
     <nav>
       <ul>
         <li>
           <figure class="mobile-menu">
-            <img class="menu-hamburger" src="images/icon-menu.svg" alt="">
+            <button id="btn-menu"><img class="menu-hamburger"  src="images/icon-menu.svg" alt=""></button>
             <img class="logo" src="images/logo.svg" alt="logo">
           </figure>
         </li>
@@ -63,8 +63,14 @@
     
     <section class="product">
       <figure>
-        <img class="selected" src="images/image-product-1.jpg" alt="">
+        <img class="selected" src="images/image-product-1.jpg" alt="" id="img-change">
       </figure>
+      <form action="#">
+        <input type="radio" name="radio" id="radio1" class="radio-img">
+        <input type="radio" name="radio" id="radio2" class="radio-img">
+        <input type="radio" name="radio" id="radio3" class="radio-img">
+        <input type="radio" name="radio" id="radio4" class="radio-img">
+      </form>
       <figure>
         <ul class="thumbnail">
           <li><img src="images/image-product-1-thumbnail.jpg" alt=""></li>
